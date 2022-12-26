@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Super Puzzle</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<h1>Super Puzzle</h1>
+		<div class="container">
+			<form>
+				<div class="overall">
+					<div class="row">
+						<label for="rowCount" class="label">Row Count :</label>
+						<input type="tel" min="0" id ="rowCount" class="input" maxlength="1" pattern="^\d{1}$" oninvalid="this.setCustomValidity('Value lesser than 10')" oninput="this.setCustomValidity('')" required /> 
+					</div>
+					<div class="row">
+						<label for="colCount" class="label">Column Count:</label>
+						<input type="tel" min="0" id="colCount" class="input" maxlength="1" pattern="^\d{1}$" oninvalid="this.setCustomValidity('Value lesser than 10')" oninput="this.setCustomValidity('')" required />
+					</div>
+					<button class="submit">Generate Grid</button>
+				</form>
+				<div class="grid">
+				<table id="gridTable" border="1"></table>
+				<h4></h4> 
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
