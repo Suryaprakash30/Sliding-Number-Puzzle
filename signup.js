@@ -44,7 +44,7 @@ function matchRePass() {
 }
 
 function sendEmail(code) {
-	emailjs.init("q0tIk-wHbM2Kc9DeQ");
+	emailjs.init("Aa82slTOn5_ej9X7q");
 	emailjs.send("service_l7kxuwe", "template_ud2jsee", {to_email: email.value, to_name: name.value, message_html: code})
 	.then(function(response) {
 		console.log("Email successfully sent!");
